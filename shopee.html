@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <style>
+        .item1{ 
+            grid-area: main;
+            background-image: url(assets/shopee.main.png);
+            background-position: center center;
+        }
+        .item2{ 
+            grid-area: right;
+            background-image: url(assets/shopee.right.png);
+            background-size: 470px ;
+            background-position: center center;
+        }
+        .item3{ 
+            grid-area: bottom;
+            background-image: url(assets/shopee.bottom.png);
+            background-size: 470px ;
+            background-position: center center;
+        }
+
+        .grid-container{
+            display: grid;
+            width: 88%;
+            height: 240px;
+            grid-template-areas: 
+            'main main main main main main right right right'
+            'main main main main main main bottom bottom bottom';
+            gap: 5px;
+            background-color:darkgray;
+            padding: 5px;
+            margin: 150px 0 0 70px;
+        }
+        .grid-container > div {
+            background-color:white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">main</div>
+        <div class="item2">right</div>
+        <div class="item3">bottom</div>
+    </div>
+</body>
+</html>
